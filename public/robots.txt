@@ -1,0 +1,13 @@
+
+User-agent: *
+Allow: /
+
+# Blocked paths
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml

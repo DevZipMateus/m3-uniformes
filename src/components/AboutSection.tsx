@@ -1,71 +1,80 @@
 
-import { CheckCircle } from 'lucide-react';
+import { Target, Award, Shirt, Users } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
 
 const AboutSection = () => {
   const features = [
-    'Equipe altamente qualificada',
-    'Atendimento personalizado',
-    'Tecnologia de ponta',
-    'Confidencialidade e segurança',
-    'Suporte contínuo',
-    'Atualizações fiscais constantes'
+    {
+      icon: Target,
+      title: 'Nossa Missão',
+      description: 'Revolucionar o segmento de uniformes focando no conforto, excelência em acabamento e qualidade superior.'
+    },
+    {
+      icon: Award,
+      title: 'Qualidade Superior',
+      description: 'Cada etapa do processo é cuidadosamente considerada para proporcionar máximo conforto e durabilidade.'
+    },
+    {
+      icon: Shirt,
+      title: 'Materiais Selecionados',
+      description: 'Selecionamos apenas os melhores materiais para garantir produtos de alta qualidade.'
+    },
+    {
+      icon: Users,
+      title: 'Profissionalismo',
+      description: 'Acreditamos que um bom uniforme é uma extensão da identidade e profissionalismo dos nossos clientes.'
+    }
   ];
 
   return (
-    <section id="sobre-nós" className="py-24 bg-white">
+    <section id="sobre" className="py-24 bg-white">
       <div className="section-container">
         <AnimatedSection>
-          <h2 className="section-title">Sobre Nós</h2>
+          <h2 className="section-title">Sobre a M3 Uniformes</h2>
           <p className="section-subtitle">
-            Conheça nossa história e nosso compromisso com a excelência em serviços contábeis
+            Fundada com uma visão clara de revolucionar o segmento de uniformes
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-12">
-          <AnimatedSection animation="slide-in-left">
-            <div className="relative">
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
-                  alt="Nossa Equipe" 
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-full z-0"></div>
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-100 rounded-full z-0"></div>
-            </div>
-          </AnimatedSection>
-          
-          <AnimatedSection animation="fade-in-up" className="space-y-6">
-            <span className="inline-block text-sm font-semibold py-1 px-3 bg-primary/10 text-primary rounded-full">
-              Nossa História
-            </span>
-            <h3 className="text-3xl font-bold">Compromisso com a sua empresa</h3>
-            <p className="text-gray-600">
-              Fundada em 2005, nossa empresa de contabilidade tem se destacado pela excelência 
-              em serviços contábeis, fiscais e empresariais. Ao longo de mais de 15 anos, 
-              construímos uma sólida reputação baseada em confiança, transparência e resultados.
-            </p>
-            <p className="text-gray-600">
-              Nossa equipe é formada por profissionais experientes e altamente qualificados, 
-              sempre atualizados com as mais recentes mudanças na legislação e práticas contábeis.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
-              {features.map((feature) => (
-                <div key={feature} className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                  <span className="text-gray-700">{feature}</span>
+        <div className="mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <AnimatedSection animation="slide-in-left">
+              <div className="space-y-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  Excelência em Cada Detalhe
+                </h3>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  A M3 Uniformes foi fundada com uma visão clara: revolucionar o segmento de uniformes 
+                  ao focar no conforto, excelência em acabamento e qualidade superior. Desde o início, 
+                  nossa missão tem sido oferecer produtos que superem as expectativas de nossos clientes.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Nosso compromisso com a qualidade se reflete em cada etapa do processo de produção. 
+                  Desde a seleção dos melhores materiais até o acabamento final, cada detalhe é 
+                  cuidadosamente considerado para proporcionar o máximo de conforto e durabilidade.
+                </p>
+                <div className="pt-4">
+                  <span className="text-green-600 font-bold text-xl italic">
+                    "Na M3, vamos muito além do básico"
+                  </span>
                 </div>
-              ))}
-            </div>
-            
-            <a href="#contato" className="btn-primary inline-block mt-4">
-              Fale com um especialista
-            </a>
-          </AnimatedSection>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection animation="slide-in-right">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {features.map((feature, index) => (
+                  <div key={feature.title} className="glass-card rounded-xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group">
+                    <div className="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
+                      <feature.icon className="h-6 w-6 text-green-600" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">{feature.title}</h4>
+                    <p className="text-gray-600 text-sm">{feature.description}</p>
+                  </div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
         </div>
       </div>
     </section>

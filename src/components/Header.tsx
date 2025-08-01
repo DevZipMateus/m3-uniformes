@@ -29,7 +29,6 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
     
-    // Close menu when resizing from mobile to desktop
     const handleResize = () => {
       if (window.innerWidth >= 768 && isMenuOpen) {
         setIsMenuOpen(false);
@@ -44,7 +43,6 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-  // Prevent body scrolling when mobile menu is open
   useEffect(() => {
     if (isMobile) {
       if (isMenuOpen) {
@@ -61,9 +59,9 @@ const Header = () => {
 
   const menuItems: MenuItem[] = [
     { name: 'Início', href: '#início' },
-    { name: 'Sobre Nós', href: '#sobre-nós' },
+    { name: 'Sobre', href: '#sobre' },
     { name: 'Serviços', href: '#serviços' },
-    { name: 'Planos', href: '#planos' },
+    { name: 'Depoimentos', href: '#depoimentos' },
     { name: 'Contato', href: '#contato' }
   ];
 
