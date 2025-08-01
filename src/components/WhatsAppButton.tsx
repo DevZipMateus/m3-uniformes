@@ -27,12 +27,12 @@ const WhatsAppButton = () => {
         </div>
 
         {/* Button */}
-        <div className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 animate-pulse hover:animate-none">
+        <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 animate-pulse hover:animate-none" style={{ backgroundColor: 'hsl(135, 15%, 27%)' }}>
           <MessageCircle className="w-7 h-7 text-white" />
         </div>
 
         {/* Ripple effect */}
-        <div className="absolute inset-0 rounded-full bg-green-500 opacity-20 animate-ping"></div>
+        <div className="absolute inset-0 rounded-full opacity-20 animate-ping" style={{ backgroundColor: 'hsl(135, 15%, 27%)' }}></div>
       </div>
     </a>
   );

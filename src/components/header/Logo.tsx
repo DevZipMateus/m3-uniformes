@@ -12,8 +12,8 @@ const Logo = ({ scrolled }: LogoProps) => {
         src="/lovable-uploads/1abbca59-8b6c-42cb-bb39-a90b8d0cd420.png" 
         alt="M3 Uniformes - Logo" 
         className={cn(
-          "h-12 w-auto transition-all duration-300",
-          scrolled ? "h-10" : "h-12",
+          "w-auto transition-all duration-300",
+          scrolled ? "h-14" : "h-16",
           "hover:scale-105"
         )}
       />
