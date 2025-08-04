@@ -32,7 +32,7 @@ const WhatsAppButton = () => {
         </div>
 
         {/* Ripple effect */}
-        <div className="absolute inset-0 rounded-full opacity-20 animate-ping" style={{ backgroundColor: 'hsl(135, 15%, 27%)' }}></div>
+        <div className="absolute inset-0 rounded-full opacity-10 animate-pulse" style={{ backgroundColor: 'hsl(135, 15%, 27%)' }}></div>
       </div>
     </a>
   );
