@@ -28,7 +28,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="serviços" className="py-24 bg-gradient-to-b from-green-50/30 to-white">
+    <section id="serviços" className="section-background py-24 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-green-50/70 to-white/90"></div>
+      <div className="relative z-10">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Nossos Serviços</h2>
@@ -71,6 +73,7 @@ const ServicesSection = () => {
             </a>
           </div>
         </AnimatedSection>
+      </div>
       </div>
     </section>
   );

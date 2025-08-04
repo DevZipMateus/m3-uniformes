@@ -6,8 +6,9 @@ const HeroSection = () => {
   return (
     <section 
       id="início" 
-      className="relative min-h-screen flex items-start pt-32 md:pt-24 md:items-center bg-gradient-to-br from-green-50 via-white to-green-50/30 overflow-hidden"
+      className="section-background relative min-h-screen flex items-start pt-32 md:pt-24 md:items-center overflow-hidden"
     >
+      <div className="absolute inset-0 bg-gradient-to-br from-green-50/80 via-white/90 to-green-50/60"></div>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-green-500/10 skew-x-12 transform origin-bottom"></div>
@@ -15,7 +16,7 @@ const HeroSection = () => {
         <div className="absolute bottom-1/3 right-1/3 w-32 h-32 md:w-40 md:h-40 rounded-full bg-green-300/20"></div>
       </div>
 
-      <div className="container mx-auto px-4 z-10">
+      <div className="container mx-auto px-4 z-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <AnimatedSection animation="fade-in-up" className="space-y-6">
             <span className="inline-block text-sm font-semibold py-2 px-4 bg-green-100 text-green-700 rounded-full">

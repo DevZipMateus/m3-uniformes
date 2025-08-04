@@ -27,7 +27,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="sobre" className="py-24 bg-white">
+    <section id="sobre" className="section-background py-24 relative">
+      <div className="absolute inset-0 bg-white/90"></div>
+      <div className="relative z-10">
       <div className="section-container">
         <AnimatedSection>
           <h2 className="section-title">Sobre a M3 Uniformes</h2>
@@ -76,6 +78,7 @@ const AboutSection = () => {
             </AnimatedSection>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

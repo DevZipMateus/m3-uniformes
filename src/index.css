@@ -86,8 +86,17 @@
 
 @layer components {
   .hero-gradient {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    background-image: url('/lovable-uploads/d29f0e1d-d7ce-4dc4-a344-45c8840a8c29.png'), linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    background-size: cover, cover;
+    background-position: center, center;
     backdrop-filter: blur(8px);
+  }
+
+  .section-background {
+    background-image: url('/lovable-uploads/d29f0e1d-d7ce-4dc4-a344-45c8840a8c29.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   .glass-card {
