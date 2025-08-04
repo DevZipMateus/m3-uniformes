@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <img 
-                src="/lovable-uploads/1abbca59-8b6c-42cb-bb39-a90b8d0cd420.png" 
-                alt="M3 Uniformes" 
-                className="h-10 w-auto brightness-0 invert"
-              />
+            <img 
+              src="/lovable-uploads/1abbca59-8b6c-42cb-bb39-a90b8d0cd420.png" 
+              alt="M3 Uniformes" 
+              className="h-14 w-auto brightness-0 invert"
+            />
             </div>
             <p className="text-gray-400 mb-6">
               Especialistas em uniformes corporativos, camisas personalizadas e abadás. 
