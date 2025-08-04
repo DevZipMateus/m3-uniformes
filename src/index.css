@@ -16,17 +16,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary color - Verde M3 atualizado (#3D4D43) */
-    --primary: 135 15% 27%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary color - Verde escuro da logo M3 */
+    --primary: 150 18% 28%;
+    --primary-foreground: 0 0% 95%;
 
-    /* Secondary color (30%) */
-    --secondary: 135 15% 75%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary color - Cinza prateado da logo */
+    --secondary: 150 5% 80%;
+    --secondary-foreground: 150 18% 15%;
 
-    /* Accent color - Verde mais claro (10%) */
-    --accent: 135 20% 40%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent color - Verde mais intenso */
+    --accent: 150 25% 35%;
+    --accent-foreground: 0 0% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -51,14 +51,14 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 135 20% 40%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 150 25% 35%;
+    --primary-foreground: 0 0% 95%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 150 8% 25%;
+    --secondary-foreground: 0 0% 90%;
 
-    --accent: 135 15% 27%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 150 18% 28%;
+    --accent-foreground: 0 0% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -104,7 +104,7 @@
 
   .section-title::after {
     content: "";
-    background-color: hsl(135, 15%, 27%);
+    background-color: hsl(150, 18%, 28%);
     @apply absolute w-20 h-1 left-1/2 -translate-x-1/2 bottom-0 mt-4;
     bottom: -0.75rem;
   }
@@ -114,34 +114,34 @@
   }
 
   .btn-primary {
-    background-color: hsl(135, 15%, 27%);
+    background-color: hsl(150, 18%, 28%);
     @apply px-6 py-3 text-white rounded-md font-medium transition-all duration-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2;
-    focus-ring-color: hsla(135, 15%, 27%, 0.5);
+    focus-ring-color: hsla(150, 18%, 28%, 0.5);
   }
 
   .btn-primary:hover {
-    background-color: hsl(135, 15%, 22%);
+    background-color: hsl(150, 18%, 23%);
   }
 
   .btn-secondary {
-    color: hsl(135, 15%, 27%);
-    border-color: hsl(135, 15%, 80%);
+    color: hsl(150, 18%, 28%);
+    border-color: hsl(150, 5%, 75%);
     @apply px-6 py-3 bg-white rounded-md font-medium transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2 border;
-    focus-ring-color: hsla(135, 15%, 27%, 0.5);
+    focus-ring-color: hsla(150, 18%, 28%, 0.5);
   }
 
   .btn-secondary:hover {
-    background-color: hsl(135, 15%, 97%);
+    background-color: hsl(150, 25%, 97%);
   }
 
   .btn-accent {
-    background-color: hsl(135, 20%, 40%);
+    background-color: hsl(150, 25%, 35%);
     @apply px-6 py-3 text-white rounded-md font-medium transition-all duration-200 shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-offset-2;
-    focus-ring-color: hsla(135, 20%, 40%, 0.5);
+    focus-ring-color: hsla(150, 25%, 35%, 0.5);
   }
 
   .btn-accent:hover {
-    background-color: hsl(135, 20%, 35%);
+    background-color: hsl(150, 25%, 30%);
   }
 
   .animate-when-visible {
