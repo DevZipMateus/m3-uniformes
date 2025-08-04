@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="início" 
       className="section-background relative min-h-screen flex items-start pt-32 md:pt-24 md:items-center overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-green-50/80 via-white/90 to-green-50/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-green-50/40 via-white/50 to-green-50/30"></div>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-y-0 right-0 w-1/2 bg-green-500/10 skew-x-12 transform origin-bottom"></div>

@@ -5,7 +5,7 @@ import AnimatedSection from './AnimatedSection';
 const ContactSection = () => {
   return (
     <section id="contato" className="section-background py-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-green-50/70 to-white/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-green-50/40 to-white/60"></div>
       <div className="relative z-10">
       <div className="section-container">
         <AnimatedSection>
