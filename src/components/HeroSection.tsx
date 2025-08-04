@@ -1,13 +1,7 @@
-
 import { ChevronRight, Shirt, Award, Users } from 'lucide-react';
 import AnimatedSection from './AnimatedSection';
-
 const HeroSection = () => {
-  return (
-    <section 
-      id="início" 
-      className="section-background relative min-h-screen flex items-start pt-32 md:pt-24 md:items-center overflow-hidden"
-    >
+  return <section id="início" className="section-background relative min-h-screen flex items-start pt-32 md:pt-24 md:items-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-green-50/40 via-white/50 to-green-50/30"></div>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -31,12 +25,7 @@ const HeroSection = () => {
               Oferecemos produtos de alta qualidade que combinam estilo, conforto e funcionalidade.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <a 
-                href="https://wa.me/5598987301780" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="btn-primary flex items-center gap-2"
-              >
+              <a href="https://wa.me/5598987301780" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center gap-2">
                 Solicitar Orçamento
                 <ChevronRight className="h-4 w-4" />
               </a>
@@ -74,20 +63,14 @@ const HeroSection = () => {
               <div className="absolute -top-12 -left-8 w-64 h-64 bg-green-400/10 rounded-full filter blur-xl"></div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-green-300/20 rounded-full filter blur-xl"></div>
               <div className="relative z-10 bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl p-1 transform transition-all duration-500 hover:scale-[1.01] hover:shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Uniformes corporativos de alta qualidade da M3 Uniformes" 
-                  className="rounded-2xl w-full h-auto object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Uniformes corporativos de alta qualidade da M3 Uniformes" className="rounded-2xl w-full h-auto object-cover" />
               </div>
             </div>
           </AnimatedSection>
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div>
-    </section>
-  );
+      
+    </section>;
 };
-
 export default HeroSection;
