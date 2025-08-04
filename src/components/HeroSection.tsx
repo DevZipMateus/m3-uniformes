@@ -18,7 +18,7 @@ const HeroSection = () => {
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-gray-900">
               Uniformes que <br />
-              <span className="text-green-600">Fazem a Diferença</span>
+              <span className="text-gray-600">Fazem a Diferença</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-xl">
               Especialistas na criação de uniformes corporativos, camisas personalizadas e abadás. 
