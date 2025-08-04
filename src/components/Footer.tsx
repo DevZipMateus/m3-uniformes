@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/1abbca59-8b6c-42cb-bb39-a90b8d0cd420.png" 
               alt="M3 Uniformes" 
-              className="h-14 w-auto brightness-0 invert"
+              className="h-14 w-auto"
             />
             </div>
             <p className="text-gray-400 mb-6">
