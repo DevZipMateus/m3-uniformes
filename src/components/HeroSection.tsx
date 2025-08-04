@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section 
       id="início" 
-      className="relative min-h-screen flex items-start pt-24 md:pt-16 md:items-center bg-gradient-to-br from-green-50 via-white to-green-50/30 overflow-hidden"
+      className="relative min-h-screen flex items-start pt-32 md:pt-24 md:items-center bg-gradient-to-br from-green-50 via-white to-green-50/30 overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
